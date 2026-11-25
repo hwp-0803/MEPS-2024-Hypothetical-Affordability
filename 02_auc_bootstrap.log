@@ -1,0 +1,19 @@
+analytic n = 10360
+
+(1) Item-alone weighted AUC: {'NHW': np.float64(0.764), 'Hisp': np.float64(0.648), 'NHB': np.float64(0.67)}
+    In-sample AUC gain from adding item: {'NHW': np.float64(0.07), 'Hisp': np.float64(0.085), 'NHB': np.float64(0.115)}
+
+(2) Cross-validated AUC, pooled models (mean of 10 repeats): covariates only -> + payment item
+    NHW: 0.695 -> 0.769 (gain +0.074; range of gain across repeats +0.072 to +0.078)
+    Hisp: 0.529 -> 0.627 (gain +0.098; range of gain across repeats +0.093 to +0.105)
+    NHB: 0.545 -> 0.660 (gain +0.114; range of gain across repeats +0.111 to +0.118)
+(4) Cross-validated AUC, models fitted within each group (comparison pipeline)
+    NHW: 0.699 -> 0.769 (gain +0.071)
+    Hisp: 0.464 -> 0.577 (gain +0.113)
+    NHB: 0.536 -> 0.663 (gain +0.126)
+
+(3) Rao-Wu bootstrap (500 replicates), 95% percentile intervals
+    Hisp-NHW item: -0.116 [-0.182, -0.051]
+    NHB-NHW item: -0.094 [-0.159, -0.026]
+    Hisp-NHW gain: +0.015 [-0.051, +0.082]
+    NHB-NHW gain: +0.045 [-0.023, +0.113]

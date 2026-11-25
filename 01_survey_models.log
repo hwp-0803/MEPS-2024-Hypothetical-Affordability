@@ -1,0 +1,46 @@
+R4.5.3 | survey4.5 | haven2.5.5
+
+== Sample flow
+      records   esaq_weight nativity_race   eqpayb_1to7        probpy 
+        19140         11604         11249         10527         10488 
+      meddebt     sacrifice 
+        10387         10360 
+
+Analytic n by race:
+
+ NHW Hisp  NHB  NHA 
+6678 1899 1222  561 
+Unique person IDs in analytic sample: 10360 
+Design degrees of freedom (analytic subset): 159 
+
+== Table 1: weighted % by race
+     I(u) probpy debt  sac female
+NHW   6.3    6.8 15.7 27.9   51.4
+Hisp 15.7    9.1 14.3 35.2   49.6
+NHB  20.4    9.4 16.4 30.9   54.2
+NHA   1.9    4.9  9.1 26.5   50.1
+  pay4immediate pay4card_borrow        pay4plan      pay4unable 
+           56.8            10.9            23.0             9.4 
+
+== Table 3: weighted % [95% CI] of each outcome among unable (u=1) / able (u=0)
+probpy u=1  NHW 28.9 [22.2, 36.6] n=437 | Hisp 14.4 [9.5, 21.3] n=377 | NHB 15.9 [10.6, 23.1] n=295
+probpy u=0  NHW 5.3 [4.4, 6.4] n=6241 | Hisp 8.1 [5.8, 11.2] n=1522 | NHB 7.8 [5.5, 10.9] n=927
+debt   u=1  NHW 35.9 [29.5, 42.9] n=437 | Hisp 17.4 [12.6, 23.7] n=377 | NHB 17.5 [11.5, 25.6] n=295
+debt   u=0  NHW 14.3 [12.9, 15.9] n=6241 | Hisp 13.7 [10.6, 17.4] n=1522 | NHB 16.1 [12.5, 20.6] n=927
+sac    u=1  NHW 63.4 [57.0, 69.3] n=437 | Hisp 56.2 [48.5, 63.6] n=377 | NHB 47.2 [39.1, 55.5] n=295
+sac    u=0  NHW 25.6 [23.8, 27.4] n=6241 | Hisp 31.2 [28.2, 34.4] n=1522 | NHB 26.8 [22.7, 31.3] n=927
+
+== Table 2: full analytic sample (unweighted n = 10360; df = 159)
+probpy aOR NHW 5.18 [3.38, 7.94] | Hisp 1.67 [0.98, 2.84] | NHB 1.95 [1.06, 3.59] | Wald F(2,159) = 7.98, p = 0.0005 | ROR Hisp 0.32 [0.17, 0.59] | ROR NHB 0.38 [0.18, 0.78]
+debt   aOR NHW 3.18 [2.31, 4.37] | Hisp 1.39 [0.85, 2.27] | NHB 1.16 [0.68, 1.99] | Wald F(2,159) = 7.46, p = 0.0008 | ROR Hisp 0.44 [0.25, 0.76] | ROR NHB 0.37 [0.20, 0.68]
+sac    aOR NHW 3.99 [2.97, 5.37] | Hisp 2.57 [1.83, 3.61] | NHB 2.17 [1.46, 3.24] | Wald F(2,159) = 4.05, p = 0.0192 | ROR Hisp 0.64 [0.42, 1.00] | ROR NHB 0.54 [0.35, 0.86]
+
+Self-respondent n by race:
+
+ NHW Hisp  NHB  NHA 
+4422 1086  896  329 
+
+== Table 4: household respondent & ESAQ self-respondent (unweighted n = 6733; df = 159)
+probpy aOR NHW 6.08 [4.19, 8.84] | Hisp 2.04 [1.09, 3.79] | NHB 1.86 [1.01, 3.43] | Wald F(2,159) = 8.49, p = 0.0003 | ROR Hisp 0.34 [0.17, 0.66] | ROR NHB 0.31 [0.15, 0.63]
+debt   aOR NHW 3.56 [2.64, 4.80] | Hisp 1.62 [0.92, 2.88] | NHB 0.88 [0.51, 1.51] | Wald F(2,159) = 12.37, p = 0.0000 | ROR Hisp 0.46 [0.25, 0.83] | ROR NHB 0.25 [0.13, 0.46]
+sac    aOR NHW 4.24 [3.03, 5.93] | Hisp 1.82 [1.27, 2.61] | NHB 1.87 [1.23, 2.84] | Wald F(2,159) = 7.62, p = 0.0007 | ROR Hisp 0.43 [0.27, 0.69] | ROR NHB 0.44 [0.25, 0.77]

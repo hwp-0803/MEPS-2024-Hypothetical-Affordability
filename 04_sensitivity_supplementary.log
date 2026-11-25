@@ -1,0 +1,37 @@
+R4.5.3 | survey4.5 | haven2.5.5
+
+== Table S1: sensitivity of the exposure-by-race interaction models to additional adjustment
+probpy main model                         n=10360 | aOR NHW 5.18 [3.38, 7.94] | Hisp 1.67 [0.98, 2.84] | NHB 1.95 [1.06, 3.59] | F(2,159) = 7.98, p = 0.0005 | ROR Hisp 0.32 [0.17, 0.59] | NHB 0.38 [0.18, 0.78]
+probpy + log10(1 + own total charges)     n=10360 | aOR NHW 5.14 [3.33, 7.94] | Hisp 1.62 [0.94, 2.80] | NHB 1.87 [1.02, 3.44] | F(2,159) = 8.12, p = 0.0004 | ROR Hisp 0.32 [0.17, 0.59] | NHB 0.36 [0.18, 0.75]
+probpy + log10(1 + family total charges)  n=10360 | aOR NHW 5.01 [3.30, 7.60] | Hisp 1.67 [0.97, 2.87] | NHB 1.98 [1.07, 3.66] | F(2,159) = 7.53, p = 0.0008 | ROR Hisp 0.33 [0.18, 0.62] | NHB 0.40 [0.19, 0.81]
+probpy main model, valid-education sample n=10300 | aOR NHW 5.01 [3.30, 7.61] | Hisp 1.60 [0.95, 2.72] | NHB 2.08 [1.12, 3.86] | F(2,159) = 8.13, p = 0.0004 | ROR Hisp 0.32 [0.18, 0.58] | NHB 0.41 [0.20, 0.85]
+probpy + highest degree                   n=10300 | aOR NHW 4.75 [3.12, 7.24] | Hisp 1.56 [0.92, 2.63] | NHB 1.99 [1.06, 3.71] | F(2,159) = 7.89, p = 0.0005 | ROR Hisp 0.33 [0.18, 0.59] | NHB 0.42 [0.20, 0.86]
+debt   main model                         n=10360 | aOR NHW 3.18 [2.31, 4.37] | Hisp 1.39 [0.85, 2.27] | NHB 1.16 [0.68, 1.99] | F(2,159) = 7.46, p = 0.0008 | ROR Hisp 0.44 [0.25, 0.76] | NHB 0.37 [0.20, 0.68]
+debt   + log10(1 + own total charges)     n=10360 | aOR NHW 3.16 [2.27, 4.39] | Hisp 1.35 [0.81, 2.25] | NHB 1.13 [0.66, 1.92] | F(2,159) = 7.73, p = 0.0006 | ROR Hisp 0.43 [0.24, 0.76] | NHB 0.36 [0.19, 0.66]
+debt   + log10(1 + family total charges)  n=10360 | aOR NHW 3.07 [2.22, 4.26] | Hisp 1.37 [0.83, 2.28] | NHB 1.19 [0.69, 2.05] | F(2,159) = 6.77, p = 0.0015 | ROR Hisp 0.45 [0.25, 0.79] | NHB 0.39 [0.21, 0.72]
+debt   main model, valid-education sample n=10300 | aOR NHW 3.10 [2.26, 4.25] | Hisp 1.32 [0.81, 2.16] | NHB 1.15 [0.67, 1.98] | F(2,159) = 7.65, p = 0.0007 | ROR Hisp 0.43 [0.25, 0.74] | NHB 0.37 [0.20, 0.69]
+debt   + highest degree                   n=10300 | aOR NHW 2.89 [2.11, 3.97] | Hisp 1.27 [0.78, 2.07] | NHB 1.09 [0.63, 1.88] | F(2,159) = 7.35, p = 0.0009 | ROR Hisp 0.44 [0.25, 0.75] | NHB 0.38 [0.20, 0.71]
+sac    main model                         n=10360 | aOR NHW 3.99 [2.97, 5.37] | Hisp 2.57 [1.83, 3.61] | NHB 2.17 [1.46, 3.24] | F(2,159) = 4.05, p = 0.0192 | ROR Hisp 0.64 [0.42, 1.00] | NHB 0.54 [0.35, 0.86]
+sac    + log10(1 + own total charges)     n=10360 | aOR NHW 4.03 [2.97, 5.48] | Hisp 2.57 [1.83, 3.60] | NHB 2.16 [1.43, 3.26] | F(2,159) = 4.14, p = 0.0177 | ROR Hisp 0.64 [0.41, 1.00] | NHB 0.54 [0.34, 0.85]
+sac    + log10(1 + family total charges)  n=10360 | aOR NHW 3.90 [2.90, 5.24] | Hisp 2.65 [1.90, 3.70] | NHB 2.27 [1.51, 3.43] | F(2,159) = 3.10, p = 0.0476 | ROR Hisp 0.68 [0.44, 1.05] | NHB 0.58 [0.37, 0.93]
+sac    main model, valid-education sample n=10300 | aOR NHW 3.97 [2.94, 5.36] | Hisp 2.56 [1.83, 3.60] | NHB 2.13 [1.43, 3.18] | F(2,159) = 4.10, p = 0.0184 | ROR Hisp 0.65 [0.42, 1.00] | NHB 0.54 [0.34, 0.85]
+sac    + highest degree                   n=10300 | aOR NHW 4.02 [2.96, 5.45] | Hisp 2.55 [1.82, 3.58] | NHB 2.15 [1.44, 3.20] | F(2,159) = 4.20, p = 0.0168 | ROR Hisp 0.64 [0.41, 0.99] | NHB 0.53 [0.34, 0.85]
+
+Unweighted n by race, valid-education sample:
+
+ NHW Hisp  NHB  NHA 
+6661 1875 1210  554 
+
+== Table S2: health care use and cost-related delayed or forgone care by hypothetical response
+(adjusted predicted %, standardized to the model sample; gap vs NHW in percentage points [95% CI])
+visit  interaction model                  n=10360 | aOR NHW 0.91 [0.61, 1.34] | Hisp 1.07 [0.67, 1.70] | NHB 1.06 [0.68, 1.66] | F(2,159) = 0.19, p = 0.8256 | ROR Hisp 1.18 [0.64, 2.16] | NHB 1.17 [0.66, 2.05]
+   visit  u=1  NHW 84.1 | Hisp 76.1 (gap -8.0 [-15.3, -0.6]) | NHB 72.5 (gap -11.6 [-19.5, -3.7])
+   visit  u=0  NHW 85.2 | Hisp 75.1 (gap -10.0 [-13.8, -6.3]) | NHB 71.5 (gap -13.6 [-17.8, -9.5])
+erip   interaction model                  n=10360 | aOR NHW 2.42 [1.84, 3.17] | Hisp 1.40 [0.95, 2.08] | NHB 1.35 [0.86, 2.10] | F(2,159) = 3.74, p = 0.0259 | ROR Hisp 0.58 [0.37, 0.91] | NHB 0.56 [0.32, 0.96]
+   erip   u=1  NHW 31.2 | Hisp 20.3 (gap -10.9 [-18.6, -3.2]) | NHB 20.1 (gap -11.1 [-19.4, -2.9])
+   erip   u=0  NHW 16.3 | Hisp 15.5 (gap -0.8 [-3.7, +2.1]) | NHB 15.9 (gap -0.4 [-3.6, +2.7])
+unmet  interaction model                  n=10343 | aOR NHW 3.80 [2.81, 5.15] | Hisp 1.82 [1.14, 2.90] | NHB 1.96 [1.15, 3.35] | F(2,159) = 5.03, p = 0.0076 | ROR Hisp 0.48 [0.28, 0.81] | NHB 0.52 [0.28, 0.94]
+   unmet  u=1  NHW 23.2 | Hisp 12.4 (gap -10.8 [-16.4, -5.3]) | NHB 13.4 (gap -9.8 [-15.9, -3.8])
+   unmet  u=0  NHW 7.9 | Hisp 7.4 (gap -0.5 [-2.5, +1.5]) | NHB 7.5 (gap -0.4 [-3.1, +2.3])
+
+Unweighted n with valid delayed/forgone-care items: 10343 
